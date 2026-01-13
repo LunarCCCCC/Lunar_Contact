@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar C - ช่องทางติดต่อ</title>
+
+    <!-- Mitr font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Mitr', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #45c980;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        .header h1 {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: white;
+            font-size: 36px;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .button-label {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 8px;
+            margin-top: 12px;
+            font-weight: 500;
+        }
+
+        .button-label:first-of-type {
+            margin-top: 0;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #764ba2;
+            color: white;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .link-button:last-child {
+            margin-bottom: 0;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+        }
+
+        .link-button:active {
+            transform: translateY(0);
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .link-button {
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Lunar Contact</h1>
+        </div>
+
+        <!-- Section 2: Phone Numbers -->
+        <div class="section">
+            <div class="section-title">📞 เบอร์โทรศัพท์</div>
+            <a href="tel:0812345678" class="link-button">
+                <span class="icon">📱</span>
+                <span>061-414-0166</span>
+            </a>
+            <a href="tel:0887654321" class="link-button">
+                <span class="icon">📱</span>
+                <span>097-949-9546</span>
+            </a>
+        </div>
+
+        <!-- Section 3: WhatsApp -->
+        <div class="section">
+            <div class="section-title">💬 WhatsApp</div>
+            <div class="button-label">ติดต่อผ่าน WhatsApp</div>
+            <a href="https://wa.me/message/SCKBZOX3VJ4CL1" class="link-button" target="_blank">
+                <span class="icon">💚</span>
+                <span>แชทกับเรา</span>
+            </a>
+        </div>
+
+        <!-- Section 4: Email -->
+        <div class="section">
+            <div class="section-title">✉️ Email</div>
+            <div class="button-label">Lunar Card Corner</div>
+            <a href="mailto:info@lunarc.com" class="link-button">
+
+                <span>cardevent.application@gmail.com</span>
+            </a>
+            <div class="button-label">Lunar Cafe</div>
+            <a href="mailto:support@lunarc.com" class="link-button">
+
+                <span>lunarcafe.lair@gmail.com</span>
+            </a>
+            <div class="button-label">Lunar Craft Studio</div>
+            <a href="mailto:support@lunarc.com" class="link-button">
+
+                <span>lunarcraftstudio.46@gmail.com</span>
+            </a>
+        </div>
+
+        <!-- Section 5: LINE -->
+        <div class="section">
+            <div class="section-title">💚 LINE Official</div>
+            <div class="button-label">LINE Official Account</div>
+            <a href="https://line.me/R/ti/p/@uof4045u" class="link-button" target="_blank">
+                <span class="icon">💚</span>
+                <span>เพิ่มเพื่อน @lunar_cafe</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
